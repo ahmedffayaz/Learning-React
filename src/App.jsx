@@ -1,11 +1,12 @@
 import { useState } from 'react'
 function App() {
   let [counter, setCounter] = useState(0)
- const addValue = (counter) => {
+  const addValue = () => {
     setCounter(counter + 1)
     console.log('Value Added', counter)
   }
-  const removeValue = (counter) => {
+  const removeValue = () => {
+    if(counter === 0) return
     setCounter(counter - 1)
     console.log('Value Subtracted', counter)
   }
