@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Button from './components/Button.jsx'
 function App() {
   let [counter, setCounter] = useState(0)
   const addValue = () => {
@@ -13,13 +14,8 @@ function App() {
   return (
   <>
   <h1>Counter: {counter}</h1>
-  <button
-  onClick={addValue}
-  >Add Value</button> <br />
-
-  <button
-  onClick={removeValue}
-  >Subtract Value</button>
+  <Button BtnText={'Add Value'} Btnevent={addValue} />
+  <Button BtnText={'Subtract Value'} Btnevent={removeValue} />
   </>
   )
 }
