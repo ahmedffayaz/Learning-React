@@ -20,7 +20,7 @@ function App() {
   return (
   <>
   <div className='text-center justify-center'>
-  <h1>Counter: {counter}</h1>
+  <h1 className='my-3'>Counter: {counter}</h1>
   <Button BtnText={'Add Value'} Btnevent={addValue} />
   <Button BtnText={'Subtract Value'} Btnevent={removeValue} />
   </div>
