@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Button from './components/Button.jsx'
 import PasswordGenerator from './passwordGenerator.jsx'
+import CurrencyGenerator from './currencyGenerator.jsx'
 function App() {
   // useState is a React Hook that lets you add a state variable to your component. 
   // You can call it inside a function component to add some local state to it. React will preserve this state between re-renders. 
@@ -26,6 +27,7 @@ function App() {
   </div>
   <br />
   <PasswordGenerator />
+  <CurrencyGenerator />
   </>
   )
 }
