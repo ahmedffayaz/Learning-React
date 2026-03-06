@@ -32,7 +32,7 @@ function PasswordGenerator() {
         generatePassword();
     }, [length, numbersAllowed, charAllowed, generatePassword]);
   return (
-    <div className="w-full max-w-md mx-auto px-4 my-8 bg-gray-700 rounded-lg shadow-md text-orange-500 p-4">
+    <div className="w-full max-w-md mx-auto px-4 bg-gray-700 rounded-lg shadow-md text-orange-500 p-4">
       <h1 className="text-white text-center mb-3">Password Generator</h1>
       <div className='flex shadow rounded-lg overflow-hidden mb-4'>
         <input

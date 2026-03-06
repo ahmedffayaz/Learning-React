@@ -30,11 +30,11 @@ const CurrencyGenerator = () => {
     return (
       <> 
             <div
-        className="text-black mt-0 w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+        className="text-black w-full mt-5 flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
        
     >
         <div className="w-full">
-            <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+            <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-gray-700">
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
@@ -42,7 +42,7 @@ const CurrencyGenerator = () => {
                        
                     }}
                 >
-          <h1 className='text-white my-4 text-center text-2xl'>Currency Converter</h1>
+          <h1 className='text-white mb-3 text-center text-2xl'>Currency Converter</h1>
 
                     <div className="w-full mb-1">
                         <CurrencyInput
