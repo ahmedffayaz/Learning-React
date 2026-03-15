@@ -1,10 +1,6 @@
 import { useState } from 'react'
-import Button from './components/Button.jsx'
-import PasswordGenerator from './passwordGenerator.jsx'
-import CurrencyGenerator from './currencyGenerator.jsx'
-import { UserContextProvider } from './context/UserContextProvider.jsx'
-import Login from './components/Auth/login.jsx'
-import { Profile } from './components/Auth/profile.jsx'
+import Button from './components/utils/Button.jsx'
+
 function App() {
   // useState is a React Hook that lets you add a state variable to your component. 
   // You can call it inside a function component to add some local state to it. React will preserve this state between re-renders. 
@@ -29,17 +25,6 @@ function App() {
   <Button BtnText={'Subtract Value'} Btnevent={removeValue} />
   </div>
   <br />
-  <PasswordGenerator />
-  <CurrencyGenerator />
-  {/* Here we are wrapping the components that need the user context with the UserContextProvider 
-  so that they can access the user information and token through the context. */}
-  <div className='text-center my-4'>
-    <UserContextProvider>
-    {/* Wrap your components that need user context here */}
-    <Login />
-    <Profile />
-  </UserContextProvider>
-  </div>
   </>
   )
 }

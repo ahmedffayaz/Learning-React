@@ -1,16 +1,19 @@
 import React, {useState, useContext} from 'react'
-import UserContext from '../../context/usserContext'
+import UserContext from '../../context/userContext/userContext.js'
 
 export default function Login() {
     const [username, setUserName] = useState('')
     const [password, setPassword] = useState('')
 
-    const { user, setUser } = useContext(UserContext)
-    const handleSubmit = (e) => {        e.preventDefault()
-        setUser({ username, password })
+    const { user, setUser } = useContext(UserContext)   // Here setUser is accessing from the UserContext and we will use it to set the user information when the user logs in.
+    const handleSubmit = (e) => {        
+        e.preventDefault()
+         setUser(prev => ({ ...prev, username, password
+  }));
     }
     return (
-        <div className="max-w-md mx-auto p-6 bg-gray-800 shadow-lg rounded-lg mt-10">
+        <> 
+                <div className="max-w-md mx-auto p-6 bg-gray-800 shadow-lg rounded-lg mt-10">
             <h1 className="text-3xl font-semibold text-center mb-6">Login</h1>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <input
@@ -35,5 +38,6 @@ export default function Login() {
                 </button>
             </form>
         </div>
+        </>
     )
 } 

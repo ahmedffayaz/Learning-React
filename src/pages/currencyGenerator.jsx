@@ -1,6 +1,6 @@
 import {React, useState} from 'react';
-import {CurrencyInput} from './components'
-import useCurrencyInfo from './hooks/useCurrencyInfo'
+import {CurrencyInput} from '../components'
+import useCurrencyInfo from '../hooks/useCurrencyInfo'
 const CurrencyGenerator = () => {
   
   // In the above code we have a currency converter app. We have two input boxes, one for the amount and one for 

@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
-import UserContext from '../../context/usserContext'
+import UserContext from '../../context/userContext/userContext.js'
 export const Profile = () => {
-    const { user } = useContext(UserContext)
+    const { user } = useContext(UserContext) // Here user is accessing from the UserContext and we will use it to display the user information in the profile component. If the user is not logged in, we will show a message asking them to login.
     if (!user) {
         return <p className="text-center text-gray-600 mt-6">Please login to view your profile</p>
     }

@@ -6,5 +6,5 @@ import React from "react";
 
 // I have created userContextProvider.jsx file to create the provider for the user context and wrap the components that need the user 
 // information with it.
-const UserContext = React.createContext();
+const UserContext = React.createContext({ user: null, setUser: () => {} });
 export default UserContext;
